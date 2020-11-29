@@ -151,3 +151,25 @@ label {
   color: white;
   height: 75px;
 }
+
+.popup-header {
+  background-color: #92E3A9; 
+  font-family: 'Merriweather', serif;
+  color: #263238 !important;
+  font-size: 16px !important;
+  font-weight: 700 !important; 
+  font-style: normal !important;
+  text-decoration: none ;
+  line-height: 20.11px;
+}
+
+.popup-header2 {
+  background-color: #92E3A9; 
+  font-family: 'Merriweather', serif;
+  color: #263238 !important;
+  font-size: 16px !important;
+  font-weight: 700 !important; 
+  font-style: normal !important;
+  text-decoration: none ;
+  line-height: 20.11px;
+}
