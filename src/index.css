@@ -172,4 +172,24 @@ label {
   font-style: normal !important;
   text-decoration: none ;
   line-height: 20.11px;
+  width: 100%; 
+  padding: 0;
+}
+
+.titlu-plangere {
+  font-family: 'Roboto', sans-serif;
+  color: #263238 !important;
+  font-size: 16px !important;
+  font-weight: 700 !important; 
+  font-style: normal !important;
+  line-height: 18.75px;
+}
+
+.materie {
+  font-family: 'Roboto', sans-serif;
+  color: #92E3A9 !important;
+  font-size: 16px !important;
+  font-weight: 700 !important; 
+  font-style: normal !important;
+  line-height: 18.75px;
 }

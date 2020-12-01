@@ -6,7 +6,6 @@ const Main = () => {
 
     const [show, setShow] = useState(false);
     
-
     return (
         <>
             <div className="container main-1 py-5">

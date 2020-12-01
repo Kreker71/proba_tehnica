@@ -19,17 +19,17 @@ const PopUp = (props) => {
       const storedPlangeri = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)); 
       if(storedPlangeri) 
         setPlangeri(storedPlangeri); 
-    }, [])
+    }, []);
 
     useEffect(() => {
       localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(plangeri))
-    }, [plangeri])
+    }, [plangeri]);
 
 
-    function handleAddPlangere(e) {
+    const handleAddPlangere = (e) => {
       const titlu = titluPlangereRef.current.value;
       const materie = materieRef.current.value; 
-      if(titlu == "") return 
+      if(titlu === "") return 
       setPlangeri(prevPlangeri => {
         return [...prevPlangeri, {id: uuidv4(), materie: materie, titlu: titlu}]
       })
@@ -38,7 +38,7 @@ const PopUp = (props) => {
 
     return (
       <>
-        <Modal show={show} onHide={handleClose}>
+        <Modal show={show} onHide={handleClose} className="popup">
           <Modal.Header closeButton className="popup-header">
             <Modal.Title>
                 Exprimă-ți frustrările
@@ -60,9 +60,8 @@ const PopUp = (props) => {
                 <button onClick={handleAddPlangere} type="submit" class="btn btn-primary custom-btn-1 justify-content-center">Incarca</button>
             </form>
           </Modal.Body>
-          <Modal.Footer>
+          <Modal.Footer className="popup-footer">
             <div className="popup-header2">Plangerile introduse pana acum</div>
-            
             <div class="container d-flex flex-column bd-highlight mb-3 py-4">
                 <ListaPlangeri plangeri={plangeri}/>
             </div>
