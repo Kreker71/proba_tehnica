@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Form extends Component {
     render() {
         return (
-            <div className="container form-container py-5">
+            <div className="container py-5">
                 <div className="box shadow p-3 mb-5 bg-white rounded">
                     <div className="row">
                         <div className="col">

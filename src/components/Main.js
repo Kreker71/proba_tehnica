@@ -5,12 +5,14 @@ import PopUp from './PopUp';
 const Main = () => {
 
     const [show, setShow] = useState(false);
+    // const styles = {
+    //     max-width: 100%; 
+    // };
     
     return (
-        <>
             <div className="container main-1 py-5">
                 <div className="row">
-                    <div className="col col-lg-8 box">
+                    <div className="col-12 col-lg-8 box">
                         <div className="row py-5 first-row">
                             Cumpăratul de teme nu a fost niciodată mai simplu!
                         </div>
@@ -30,13 +32,12 @@ const Main = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col col-lg-4 box">
+                    <div className="col-12 col-lg-4 box">
                         <Svg_Drawing />
                     </div>
                 </div>
+                <PopUp show={show} setShow={setShow}/>
             </div>
-            <PopUp show={show} setShow={setShow}/>
-        </>
     )
 }
 

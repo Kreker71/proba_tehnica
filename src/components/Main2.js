@@ -7,7 +7,7 @@ const Main2 = () => {
                 <div className="container">
                     <h1 class="d-flex justify-content-center display-4 py-5 main-2-header">Cum functioneaza?</h1>
                     <div className="row">
-                        <div className="d-flex flex-row col main-2-col mx-3">
+                        <div className="d-flex flex-row col-lg col-sm-12 main-2-col mx-3 py-3">
                             <div className="d-flex justify-content-start number px-2">
                                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="50" height="50" rx="5" fill="#263238"/>
@@ -18,7 +18,7 @@ const Main2 = () => {
                                 Realizezi un cont pe platformă în care introduci câteva detalii personale (nu vă faceți griji, profesorii nu or să va descopere) și materiile la care ai nevoie de ajutor.
                             </div>
                         </div>
-                        <div className="d-flex flex-row col main-2-col mx-3">
+                        <div className="d-flex flex-row col-lg col-sm-12 main-2-col mx-3 py-3">
                             <div className="d-flex justify-content-start number px-2">
                             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="50" height="50" rx="5" fill="#263238"/>
@@ -29,7 +29,7 @@ const Main2 = () => {
                                 Străbați platforma în căutare de studenți care oferă servicii la materiile dorite sau te rogi la Sfântul 5 să primești mesaj de la cineva care te descoperă și e dispus să te salveze.
                             </div>
                         </div>
-                        <div className="d-flex flex-row col main-2-col mx-3">
+                        <div className="d-flex flex-row col-lg col-sm-12 main-2-col mx-3 py-3">
                             <div className="d-flex justify-content-start number px-2">
                                 <svg width="50" height="53" viewBox="0 0 50 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect y="3" width="50" height="50" rx="5" fill="#263238"/>
