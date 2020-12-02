@@ -16,19 +16,19 @@ export default class Form extends Component {
                         </div>
                         <div className="col">
                             <form>
-                                <div class="form-group">
-                                    <label for="nume">Nume</label>
-                                    <input type="text" class="form-control" id="nume" aria-describedby="numeHelp"/>
+                                <div className="form-group">
+                                    <label htmlFor="nume">Nume</label>
+                                    <input type="text" className="form-control" id="nume" aria-describedby="numeHelp"/>
                                 </div>
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" />
+                                <div className="form-group">
+                                    <label htmlFor="email">Email</label>
+                                    <input type="email" className="form-control" id="email" />
                                 </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Injuratura</label>
-                                    <input type="text" class="form-control" id="injuratura" />
+                                <div className="form-group">
+                                    <label htmlFor="exampleInputPassword1">Injuratura</label>
+                                    <input type="text" className="form-control" id="injuratura" />
                                 </div>
-                                <button type="submit" class="btn btn-primary custom-btn-1">Submit</button>
+                                <button type="submit" className="btn btn-primary custom-btn-1">Submit</button>
                             </form>
                         </div>
                     </div>

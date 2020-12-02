@@ -11,7 +11,7 @@ const PopUp = (props) => {
     const handleClose = () => setShow(false);
 
     const materii = ["PC", "USO", "Mate1", "Mate2"];
-    const [plangeri, setPlangeri] = useState([{id: 1, materie: materii[0], titlu: "ajutor"}]);
+    const [plangeri, setPlangeri] = useState([]);
     const titluPlangereRef = useRef();
     const materieRef = useRef();
 
@@ -29,6 +29,8 @@ const PopUp = (props) => {
     const handleAddPlangere = (e) => {
       const titlu = titluPlangereRef.current.value;
       const materie = materieRef.current.value; 
+      console.log(materie);
+      console.log(titlu);
       if(titlu === "") return 
       setPlangeri(prevPlangeri => {
         return [...prevPlangeri, {id: uuidv4(), materie: materie, titlu: titlu}]
@@ -45,24 +47,23 @@ const PopUp = (props) => {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <form
-             className="">
-                <div class="form-group">
-                    <select id="inputState" class="form-control">
+            <form>
+                <div className="form-group">
+                    <select id="inputState" className="form-control">
                         {materii.map(materie => (
-                          <option ref={materieRef}>{materie}</option>
+                          <option ref={materieRef} key={materie} value={materie}>{materie}</option>
                         ))}
                     </select>
                 </div>
-                <div class="form-group">
-                    <input ref={titluPlangereRef} type="text1" class="form-control" id="inputPassword4" placeholder="Titlul proiectului"/>
+                <div className="form-group">
+                    <input ref={titluPlangereRef} type="text1" className="form-control" id="inputPassword4" placeholder="Titlul proiectului"/>
                 </div>
-                <button onClick={handleAddPlangere} type="submit" class="btn btn-primary custom-btn-1 justify-content-center">Incarca</button>
+                <button onClick={handleAddPlangere} type="submit" className="btn btn-primary custom-btn-1 justify-content-center">Incarca</button>
             </form>
           </Modal.Body>
           <Modal.Footer className="popup-footer">
             <div className="popup-header2">Plangerile introduse pana acum</div>
-            <div class="container d-flex flex-column bd-highlight mb-3 py-4">
+            <div className="container d-flex flex-column bd-highlight mb-3 py-4">
                 <ListaPlangeri plangeri={plangeri}/>
             </div>
           </Modal.Footer>

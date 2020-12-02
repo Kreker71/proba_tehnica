@@ -3,9 +3,9 @@ import React from 'react'
 const Main2 = () => {
     return (
         <div>
-            <div class="jumbotron py-5">
+            <div className="jumbotron py-5">
                 <div className="container">
-                    <h1 class="d-flex justify-content-center display-4 py-5 main-2-header">Cum functioneaza?</h1>
+                    <h1 className="d-flex justify-content-center display-4 py-5 main-2-header">Cum functioneaza?</h1>
                     <div className="row">
                         <div className="d-flex flex-row col-lg col-sm-12 main-2-col mx-3 py-3">
                             <div className="d-flex justify-content-start number px-2">

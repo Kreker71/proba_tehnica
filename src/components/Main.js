@@ -5,9 +5,7 @@ import PopUp from './PopUp';
 const Main = () => {
 
     const [show, setShow] = useState(false);
-    // const styles = {
-    //     max-width: 100%; 
-    // };
+
     
     return (
             <div className="container main-1 py-5">
@@ -21,18 +19,18 @@ const Main = () => {
                         </div>
                         <div className="row py-5">
                             <div className="col ">
-                                <button type="button" class="btn btn-primary custom-btn-1" onClick={() => setShow(true)}>
+                                <button type="button" className="btn btn-primary custom-btn-1" onClick={() => setShow(true)}>
                                     Vreau sa cumpar teme
                                 </button>
                             </div>
                             <div className="col">
-                                <button type="button" class="btn btn-primary custom-btn-2">
+                                <button type="button" className="btn btn-primary custom-btn-2">
                                     Vreau sa fac teme pentru altii
                                 </button>
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-lg-4 box">
+                    <div className="col-12 col-lg-4 box svg">
                         <Svg_Drawing />
                     </div>
                 </div>
