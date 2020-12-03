@@ -6,10 +6,6 @@ $base-dark: #263238; */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -24,16 +20,20 @@ a:link, a:hover, a:visited, a:active {
   text-decoration: none !important;
 }
 
-svg{
+/* .col-sm-6 .col-lg-4 box svg .svg{
   max-width: 100%;
-}
+} */
+
+/* svg {
+  max-width: 100%;
+} */
 
 /* ?? */
 .nav-link { 
   text-decoration: none !important;
 }
 
-.btn-dark a {
+.btn-dark {
   font-family: 'Merriweather', serif;
   color: #92E3A9 !important;
   font-size: 16px !important;
@@ -42,7 +42,7 @@ svg{
   text-decoration: none ;
 }
 
-.btn-link a {
+.btn-link {
   font-family: 'Merriweather', serif;
   color: #263238 !important;
   font-size: 16px;
@@ -72,6 +72,10 @@ svg{
   text-decoration: none ;
   line-height: 20.11px;
 }
+
+/* .main-1 {
+  padding: 1%;
+} */
 
 .first-row {
   font-family: 'Merriweather', serif;

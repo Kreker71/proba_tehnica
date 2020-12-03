@@ -12,8 +12,10 @@ const PopUp = (props) => {
 
     const materii = ["PC", "USO", "Mate1", "Mate2"];
     const [plangeri, setPlangeri] = useState([]);
+    const [materieCurenta, setMaterieCurenta] = useState(materii[0]);
     const titluPlangereRef = useRef();
-    const materieRef = useRef();
+
+    // const materieRef = useRef();
 
     useEffect(() => {
       const storedPlangeri = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)); 
@@ -27,16 +29,21 @@ const PopUp = (props) => {
 
 
     const handleAddPlangere = (e) => {
+      e.preventDefault();
       const titlu = titluPlangereRef.current.value;
-      const materie = materieRef.current.value; 
-      console.log(materie);
-      console.log(titlu);
+      const materie = materieCurenta; 
+      // console.log(materie);
+      // console.log(titlu);
       if(titlu === "") return 
       setPlangeri(prevPlangeri => {
         return [...prevPlangeri, {id: uuidv4(), materie: materie, titlu: titlu}]
       })
       titluPlangereRef.current.value = null;
     }
+
+    const handleChangeMaterie = (e) => {
+      setMaterieCurenta(e.target.value);
+    };
 
     return (
       <>
@@ -49,9 +56,9 @@ const PopUp = (props) => {
           <Modal.Body>
             <form>
                 <div className="form-group">
-                    <select id="inputState" className="form-control">
+                    <select onChange={handleChangeMaterie} id="inputState" className="form-control">
                         {materii.map(materie => (
-                          <option ref={materieRef} key={materie} value={materie}>{materie}</option>
+                          <option key={materie} value={materie}>{materie}</option>
                         ))}
                     </select>
                 </div>

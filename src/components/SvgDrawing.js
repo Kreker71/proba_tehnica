@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SGV_Drawing = () => {
+const SvgDrawing = () => {
     return (
         <div>
             <svg width="523" height="541" viewBox="0 0 523 541" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -251,4 +251,4 @@ const SGV_Drawing = () => {
     )
 }
 
-export default SGV_Drawing;
+export default SvgDrawing;

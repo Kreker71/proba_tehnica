@@ -6,7 +6,7 @@ export default class Form extends Component {
             <div className="container py-5">
                 <div className="box shadow p-3 mb-5 bg-white rounded">
                     <div className="row">
-                        <div className="col">
+                        <div className="col-sm-6">
                             <div className="row form-text-1 py-2 mx-3">
                                 Ai tupeu și crezi că poți să aduci îmbunătățiri la platformă?
                             </div>
@@ -14,7 +14,7 @@ export default class Form extends Component {
                                 Trimite-ne un mail și roagă-te să nu ne apuce râsul când vedem ce îți trece prin cap.
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col-sm-6">
                             <form>
                                 <div className="form-group">
                                     <label htmlFor="nume">Nume</label>
