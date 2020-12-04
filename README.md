@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Prob Tehnica LSAC 2020 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tema: Ajutor pentru programator - website 
 
-## Available Scripts
+## Made with React💻, Bootstrap🎨 and love❤
 
-In the project directory, you can run:
+### How to run:
 
-### `npm start`
+```bash
+npm start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Tasks: 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Front-end
 
-### `npm test`
+- [x] Pagina trebuie sa fie responsive (adica sa se vada ok pe orice rezolutie, fie pc, fie telefon, puteti testa prin redimensiona browserului).
+- [x] Incercati sa respectati design-ul cat de bine se poate. E ok daca nu o sa fie 1:1, dar sa nu fie abateri prea mari de la el.
+- [x] Recomandam cu incredere sa folositi un framework de front-end: Bootstrap sau Materialize. Acestea va fac viata mult mai usoara, avand elemente responsive deja codate in ele, voi doar trebuie sa le includeti.
+- [x] Pop-up-ul, initial, nu va avea nimic in lista de “Plangeri introduse pana acum”, acestea vor fi actualizate dinamic dupa cum e descris mai jos.
+Acesta va aparea la apasarea butonului, ca in mock. Atentie la butonul de X al lui care trebuie sa il inchida!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Back-end 
 
-### `npm run build`
+- [x] Acest task se va rezolva in pop-up. Cand utilizatorul da click pe “Alege materia”, ar trebui sa apara un dropdown cu niste valori (ex. PC, USO).
+Aceste valori NU vor fi hardcodate din HTML. Acestea trebuie adaugate dinamic din javascript, la incarcarea paginii. Sursa datelor poate fi, de
+exemplu o variabila in codul JS (sau un fisier). Exemplu:
+    - const subjects = [‘PC’, ‘USO’, ‘Mate1’, ‘Mate2’];
+- [x] Dupa ce utilizatorul alege materia, acesta trebuie sa dea un titlu. Poate fi orice sir de caractere.
+- [x] Dupa ce a completat formularul, daca datele introduse sunt corecte (a selectat o materie si campul de titlu nu e gol), acestea vor aparea in
+lista de sub el. Daca input-ul e invalid, acesta va fi atentionat. (hint: alert)
+- [ ] Nu e nevoie ca datele sa persiste la refresh (desi, intr-o aplicatie reala, ar trebui).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Imbunatatiri
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [x] Plangerile sa persiste la refresh (stocare in fisier, baze de date).
+- [ ]  Legarea la un server back-end (nodeJS, PHP). (note: github pages nu va mai merge)
+- [ ]  Stergerea unei plangeri din lista (un buton de X in dreptul ei)
+- [ ]  Contact form functional care sa trimita un mail cu ce s-a completat

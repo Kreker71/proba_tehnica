@@ -36,12 +36,18 @@ const PopUp = (props) => {
       // console.log(titlu);
       if(titlu === ""){
         alert("Titlul proiectului este invalid");
+        return;
       } 
       setPlangeri(prevPlangeri => {
         return [...prevPlangeri, {id: uuidv4(), materie: materie, titlu: titlu}]
       })
       titluPlangereRef.current.value = null;
     }
+
+    // const deletePlangere = () => {
+    //     setPlangeri(plangeri.filter((el) => el.id !== plangeri.id));
+    // };
+
 
     const handleChangeMaterie = (e) => {
       setMaterieCurenta(e.target.value);
@@ -60,7 +66,9 @@ const PopUp = (props) => {
                 <div className="form-group">
                     <select onChange={handleChangeMaterie} id="inputState" className="form-control">
                         {materii.map(materie => (
-                          <option key={materie} value={materie}>{materie}</option>
+                          <option key={materie} value={materie}>
+                            {materie}
+                          </option>
                         ))}
                     </select>
                 </div>
