@@ -34,7 +34,9 @@ const PopUp = (props) => {
       const materie = materieCurenta; 
       // console.log(materie);
       // console.log(titlu);
-      if(titlu === "") return 
+      if(titlu === ""){
+        alert("Titlul proiectului este invalid");
+      } 
       setPlangeri(prevPlangeri => {
         return [...prevPlangeri, {id: uuidv4(), materie: materie, titlu: titlu}]
       })
@@ -63,13 +65,16 @@ const PopUp = (props) => {
                     </select>
                 </div>
                 <div className="form-group">
-                    <input ref={titluPlangereRef} type="text1" className="form-control" id="inputPassword4" placeholder="Titlul proiectului"/>
+                  <input ref={titluPlangereRef} type="text1" className="form-control" id="inputPassword4" placeholder="Titlul proiectului"/>
                 </div>
-                <button onClick={handleAddPlangere} type="submit" className="btn btn-primary custom-btn-1 justify-content-center">Incarca</button>
+                <div className="d-flex justify-content-center">
+                  <button onClick={handleAddPlangere} type="submit" className="btn btn-primary  custom-btn-1">Incarca</button>
+                </div>
+                
             </form>
           </Modal.Body>
+          <div className="popup-header2">Plangerile introduse pana acum</div>
           <Modal.Footer className="popup-footer">
-            <div className="popup-header2">Plangerile introduse pana acum</div>
             <div className="container d-flex flex-column bd-highlight mb-3 py-4">
                 <ListaPlangeri plangeri={plangeri}/>
             </div>
