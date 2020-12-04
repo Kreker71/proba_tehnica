@@ -1,11 +1,11 @@
 import React from 'react';
 import Plangere from './Plangere'; 
 
-const ListaPlangeri = ({ plangeri }) => {
+const ListaPlangeri = ({ plangeri, handleDelete }) => {
 
     return (
-        plangeri.map(plangere => {
-            return <Plangere key={plangere.id} plangere={plangere} />
+        plangeri?.map(plangere => {
+            return <Plangere key={plangere.id} plangere={plangere} handleDelete={handleDelete} />
         })
     )
 }

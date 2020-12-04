@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Plangere = ({ plangere }) => {
+const Plangere = ({ plangere, handleDelete }) => {
 
     // const deletePlangere = () => {
-    //     setPlangeri(plangeri.filter((el) => el.id !== plangere.id));
+    //     setPlangeri(plangeri?.filter((el) => el.id !== plangere.id));
     // };
 
     return (
@@ -14,7 +14,7 @@ const Plangere = ({ plangere }) => {
             </div>
 
             <div className="p-2">
-                <button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
+                <button onClick={ ()=> handleDelete(plangere.id) } class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
             </div>        
         </div>
     )

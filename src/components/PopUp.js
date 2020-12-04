@@ -50,6 +50,10 @@ const PopUp = (props) => {
       setMaterieCurenta(e.target.value);
     };
 
+    const handleDelete = (id) => {
+      setPlangeri(plangeri?.filter((el) => el.id !== id));
+    }
+
     return (
       <>
         <Modal show={show} onHide={handleClose} className="popup">
@@ -81,7 +85,7 @@ const PopUp = (props) => {
           <div className="popup-header2">Plangerile introduse pana acum</div>
           <Modal.Footer className="popup-footer">
             <div className="container d-flex flex-column bd-highlight mb-3 py-4">
-                <ListaPlangeri plangeri={plangeri}/>
+                <ListaPlangeri plangeri={plangeri} handleDelete={handleDelete}/>
             </div>
           </Modal.Footer>
         </Modal>
