@@ -17,7 +17,6 @@ npm start
 ### Scurt intro 
 Primul meu proiect in React :D
 Plangerile raman dupa refresh (am folosit hook-ul userRef) 😈
-Din pacate nu am reusit sa implementez si functia de stergere a unei plangeri 😢
 Sper sa va placa si sa fie totul ok! Love 
 
 ### Tasks: 
@@ -45,5 +44,5 @@ lista de sub el. Daca input-ul e invalid, acesta va fi atentionat. (hint: alert)
 
 - ✅ Plangerile sa persiste la refresh (stocare in fisier, baze de date).
 - ❌  Legarea la un server back-end (nodeJS, PHP). (note: github pages nu va mai merge)
-- ❌  Stergerea unei plangeri din lista (un buton de X in dreptul ei)
+- ✅  Stergerea unei plangeri din lista (un buton de X in dreptul ei)
 - ❌  Contact form functional care sa trimita un mail cu ce s-a completat
