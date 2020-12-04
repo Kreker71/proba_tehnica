@@ -10,9 +10,15 @@
 npm start
 ```
 
+### Link Github-pages: 
+
+[https://kreker71.github.io/proba_tehnica/]
+
 ### Scurt intro 
 Primul meu proiect in React :D
-
+Plangerile raman dupa refresh (am folosit hook-ul userRef) 😈
+Din pacate nu am reusit sa implementez si functia de stergere a unei plangeri 😢
+Sper sa va placa si sa fie totul ok! Love 
 
 ### Tasks: 
 
