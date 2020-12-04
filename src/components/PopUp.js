@@ -44,10 +44,7 @@ const PopUp = (props) => {
       titluPlangereRef.current.value = null;
     }
 
-    // const deletePlangere = () => {
-    //     setPlangeri(plangeri.filter((el) => el.id !== plangeri.id));
-    // };
-
+    // plangeri.pop()
 
     const handleChangeMaterie = (e) => {
       setMaterieCurenta(e.target.value);
